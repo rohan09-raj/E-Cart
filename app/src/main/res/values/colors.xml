@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Light Theme-->
+    <!--Dark Theme-->
+    <color name="colorPrimary">#F47B18</color>
+
+    <!--Accent Color-->
+    <color name="colorAccent">#ff9d3f</color>
+
+    <color name="colorThemeOrange">#ef6c00</color>
+    <color name="colorThemeLightOrange">#ff9d3f</color>
+
+    <color name="cardYellow">#FFEB3B</color>
+
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#424141</color>
+
+    <!--Contrast Color-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Snack Bar-->
+    <color name="colorSnackBarError">#FF1100</color>
+    <color name="colorSnackBarSuccess">#4CAF50</color>
+
+    <color name="colorLightGrey">#f1f1f1</color>
+
+    <color name="colorBorder">#E8E6E6</color>
+    <color name="colorDarkGrey">#878787</color>
+
+    <color name="colorProductImageBackground">#878787</color>
+
+    <color name="colorItemValueText">#545353</color>
+
+    <color name="colorDashboardItemDetailsBackground">#F3F3F3</color>
+
+    <color name="colorOrderStatusInProcess">#FF9800</color>
+    <color name="colorOrderStatusDelivered">#8BC34A</color>
+
+</resources>
