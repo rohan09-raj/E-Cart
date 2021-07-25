@@ -86,7 +86,7 @@ open class CartItemsListAdapter(
             holder.itemView.ib_add_cart_item.setOnClickListener {
                 val cartQuantity: Int = itemPosition.cart_quantity.toInt()
 
-                if (cartQuantity < itemPosition.cart_quantity.toInt()) {
+                if (cartQuantity < itemPosition.stock_quantity.toInt()) {
                     val itemHashMap = HashMap<String, Any>()
                     itemHashMap[Constants.CART_QUANTITY] = (cartQuantity + 1).toString()
 
