@@ -1,8 +1,10 @@
 package com.devronan.e_cart.ui.activities
 
+import android.graphics.Typeface
 import android.os.Build
 import android.os.Bundle
 import android.text.TextUtils
+import android.text.method.PasswordTransformationMethod
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
@@ -11,7 +13,10 @@ import com.devronan.e_cart.firestore.FirestoreClass
 import com.devronan.e_cart.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.activity_register.edit_text_password
+import kotlinx.android.synthetic.main.activity_register.tv_login
 
 class RegisterActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +42,11 @@ class RegisterActivity : BaseActivity() {
         button_register.setOnClickListener {
             registerUser()
         }
+
+        edit_text_password.typeface = Typeface.DEFAULT
+        edit_text_password.transformationMethod = PasswordTransformationMethod()
+        edit_text_confirm_password.typeface = Typeface.DEFAULT
+        edit_text_confirm_password.transformationMethod = PasswordTransformationMethod()
     }
 
     private fun setUpActionBar() {
